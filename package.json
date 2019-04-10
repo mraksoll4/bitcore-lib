@@ -1,12 +1,13 @@
 {
   "name": "bitcore-lib",
-  "version": "0.16.0",
+  "version": "8.1.0",
   "description": "A pure and powerful JavaScript Bitcoin library.",
   "author": "BitPay <dev@bitpay.com>",
   "main": "index.js",
   "scripts": {
     "lint": "gulp lint",
     "test": "gulp test",
+    "test:ci": "npm run test",
     "coverage": "gulp coverage",
     "build": "gulp"
   },
@@ -28,24 +29,26 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/bitpay/bitcore-lib.git"
+    "url": "https://github.com/mraksoll4/bitcore-lib.git"
   },
   "browser": {
     "request": "browser-request"
   },
   "dependencies": {
     "bn.js": "=4.11.8",
-    "bs58": "=4.0.1",
+    "bs58": "^4.0.1",
     "buffer-compare": "=1.1.1",
     "elliptic": "=6.4.0",
     "inherits": "=2.0.1",
+    "bs58": "^4.0.1",
     "lodash": "=4.17.11"
   },
   "devDependencies": {
-    "bitcore-build": "https://github.com/bitpay/bitcore-build.git#1023e8a99cd42b9241ccafe8e34c52f308c10284",
+    "bitcore-build": "^8.1.0",
     "brfs": "^2.0.1",
     "chai": "^4.2.0",
     "gulp": "^4.0.0",
+    "karma-phantomjs-launcher": "^1.0.4",
     "sinon": "^7.1.1"
   },
   "license": "MIT"
